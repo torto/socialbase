@@ -1,0 +1,25 @@
+{
+  "name": "SocialBase",
+  "authors": [
+    "tortoyoyo <tortoyoyo@gmail.com>"
+  ],
+  "description": "Teste da SocialBase para Front-end",
+  "main": "app.js",
+  "moduleType": [],
+  "keywords": [
+    "socialbase",
+    "front-end"
+  ],
+  "license": "GLP",
+  "homepage": "tortoyoyo.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  
+  }
+}

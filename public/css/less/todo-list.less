@@ -1,0 +1,30 @@
+.todo-list {
+  width: 100%;
+  min-height: 500px;
+  background: @color-white;
+  border-left: 0;
+  padding: 15px;
+  header {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: @color-grey-title;
+    font-weight: bold;
+    width: 100%;
+    padding-bottom: 20px;
+    img {
+      width: 30px;
+      margin-left: 30px;
+    }
+  }
+  .todo-ul {
+    padding: 0;
+    list-style-type: none;
+    li {
+      .todo-description {
+        & .text {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
