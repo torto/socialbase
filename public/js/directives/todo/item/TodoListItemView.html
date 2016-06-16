@@ -1,4 +1,4 @@
-<li ng-repeat="elem in listItem">
+<li ng-repeat="elem in listItem" ng-init="arrayShow = []">
   <div class="todo-description col-xs-10">
     <input type="checkbox" id="conteudo-{{$index}}" class="regular-checkbox" />
     <label for="conteudo-{{$index}}"></label>
@@ -7,8 +7,16 @@
 
   </div>
 <div class="todo-actions col-xs-2">
-  <a href="#"><img src="img/del.svg" alt="" /></a>
-  <a href="#"><img src="img/edit.svg" alt="" /></a>
+  <a href="" ng-init="arrayShow[$index] = false" ng-click="arrayShow[$index] = true"><img src="img/del.svg" alt="" /></a>
+  <a href=""><img src="img/edit.svg" alt="" /></a>
 </div>
-
+<confirm-dialog
+  message="'Deseja realmente excluir essa tarefa?'"
+  label-ok="'Excluir'"
+  label-cancel="'Cancelar'"
+  on-success="removeItem(elem, index)"
+  on-cancel="cancelItem(elem, index)"
+  index="$index"
+  model="elem"
+  show="arrayShow[$index]"></confirm-dialog>
 </li>

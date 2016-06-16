@@ -5,6 +5,7 @@
   function IndexController($scope) {
     function init() {
       setVariables();
+      setMethods();
     }
 
     function setVariables() {
@@ -13,6 +14,8 @@
       $scope.todoListElements = [1,2,3];
     }
 
+    function setMethods(){
+    }
     init();
   }
 }());
