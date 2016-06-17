@@ -4,7 +4,7 @@ Teste realizado para uma das fazes de seleção da SocialBase
 
 ## Demo
 
-(Demo)[http://torto.github.io/socialbase/]
+[Demo](http://torto.github.io/socialbase/)
 
 ## Instalar
 
