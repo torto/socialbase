@@ -21,5 +21,11 @@ describe('IndexController', function() {
       expect($scope.isList).toEqual(true);
       expect($scope.todoListElements.length).toEqual(0);
     });
+
+    it('Apagar elemento da array principal', function() {
+      $scope.todoListElements = [1,2,3];
+      $scope.removeItem(1, 0);
+      expect($scope.todoListElements.length).toEqual(2);
+    });
   });
 });

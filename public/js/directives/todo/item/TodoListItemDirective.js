@@ -6,21 +6,11 @@
     return {
       restrict: 'E',
       scope: {
-        listItem: '=list'
+        listItem: '=list',
+        removeItem : '&',
+        cancelRemoveItem: '&'
       },
-      templateUrl: 'js/directives/todo/item/TodoListItemView.html',
-      link: function(scope, params, algo) {
-        scope.removeItem = removeItem;
-        scope.cancelRemoveItem = cancelRemoveItem;
-
-        function removeItem(elem, index){
-          scope.listItem.splice(index, 1);
-        }
-
-        function cancelRemoveItem(elem, index){
-          alert('cancel');
-        }
-      }
+      templateUrl: 'js/directives/todo/item/TodoListItemView.html'
     };
   }
 }());

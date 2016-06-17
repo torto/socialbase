@@ -9,12 +9,12 @@
   </div>
   <div class="todo-actions col-xs-2">
     <a href="" ng-init="arrayShow[$index] = false" ng-click="arrayShow[$index] = true"><img src="img/del.svg" alt="" /></a>
-    <a href=""  ng-click="arrayEdit[$index] = true"><img src="img/edit.svg" alt="" /></a>
+    <a href=""  ng-click="arrayEdit[$index] = true" class="onEdit"><img src="img/edit.svg" alt="" /></a>
   </div>
 </div>
 <div class="col-xs-12 no-padding todo-edit" ng-show="arrayEdit[$index]">
   <div class="col-xs-10">
-  <input type="text" name="name" ng-model="elem.description" laceholder="Insira uma nova tarefa.">
+  <input type="text" name="editDescription" ng-model="elem.description" laceholder="Insira uma nova tarefa.">
   </div>
   <div class="col-xs-2 text-center">
     <a href="" ng-click="arrayEdit[$index] = false"><img src="img/add.svg" alt="" /></a>

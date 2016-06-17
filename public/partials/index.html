@@ -1,6 +1,6 @@
 <menu-left></menu-left>
 
 <page-default title="{{title}}" list="isList">
-    <todo-list-item list="todoListElements"></todo-list-item>
+    <todo-list-item list="todoListElements" remove-item="removeItem(elem, item)" cancel-remove-item="cancelRemoveItem(elem, item)"></todo-list-item>
     <todo-list-add-item list="todoListElements"></todo-list-add-item>
 </page-default>
