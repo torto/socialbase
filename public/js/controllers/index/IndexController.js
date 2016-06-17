@@ -19,6 +19,7 @@
     function setMethods() {
       $scope.removeItem = removeItem;
       $scope.cancelRemoveItem = cancelRemoveItem;
+      $scope.addItem = addItem;
     }
 
     function getElements() {
@@ -38,6 +39,14 @@
     }
 
     function cancelRemoveItem(elem, index) {}
+
+    function addItemInArray(item){
+      $scope.todoListElements.push({description: item, isChecked: false});
+    }
+
+    function addItem(item){
+      addItemInArray(item);
+    }
 
     init();
   }
