@@ -1,9 +1,9 @@
-<li ng-repeat="elem in listItem" ng-init="arrayShow = []">
+<li ng-repeat="elem in listItem" ng-init="arrayShow = [];">
   <div class="todo-description col-xs-10">
-    <input type="checkbox" id="conteudo-{{$index}}" class="regular-checkbox" />
+    <input type="checkbox" id="conteudo-{{$index}}" class="regular-checkbox" ng-model="elem.isChecked" />
     <label for="conteudo-{{$index}}"></label>
 
-    <span class="text"> Testar algo em alguma maquina</span>
+    <span ng-class="{'check': elem.isChecked}" class="text"> {{elem.description}}</span>
 
   </div>
 <div class="todo-actions col-xs-2">

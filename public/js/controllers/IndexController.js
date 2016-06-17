@@ -11,7 +11,10 @@
     function setVariables() {
       $scope.title = 'TODO-List';
       $scope.isList = true;
-      $scope.todoListElements = [1,2,3];
+      $scope.todoListElements = [{
+        isChecked:false,
+        description: 'testeeeee'
+      }];
     }
 
     function setMethods(){
