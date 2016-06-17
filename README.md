@@ -44,6 +44,8 @@ Caso não execute o bower, faça:
 
 `$ npm run start`
 
+OBS: Caso não abra a página tanto com live quanto com start, remova essa linha `<script src="//localhost:35729/livereload.js"></script>` do arquivo index.html da pasta public `public/index.html`
+
 ### Build
 
 `$ npm run build`
