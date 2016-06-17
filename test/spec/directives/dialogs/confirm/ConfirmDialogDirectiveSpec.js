@@ -7,12 +7,13 @@ describe('ConfirmDialogDirective', function() {
 
   beforeEach(module('socialbase'));
   beforeEach(module('js/directives/dialogs/confirm/ConfirmDialogView.html'));
+  beforeEach(inject(function(_$compile_, _$rootScope_) {
+    $compile = _$compile_;
+    $rootScope = _$rootScope_;
+  }));
 
   describe('Checando scopes', function() {
-    beforeEach(inject(function(_$compile_, _$rootScope_) {
-      $compile = _$compile_;
-      $rootScope = _$rootScope_;
-    }));
+
     it('estaticos de texto', function() {
       $rootScope.show = true;
       $rootScope.removeItem = onSuccess;
