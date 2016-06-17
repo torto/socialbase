@@ -18,11 +18,7 @@
       templateUrl: 'js/directives/dialogs/confirm/ConfirmDialogView.html',
       link: function(scope, params, algo) {
         function init(){
-          setVariables();
           setMethods();
-        }
-        function setVariables(){
-          // $scope.show = false;
         }
 
         function setMethods(){

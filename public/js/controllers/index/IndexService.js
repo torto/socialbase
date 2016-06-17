@@ -20,8 +20,14 @@
       callback(list);
     }
 
+    function cleanStorage(){
+      $sessionStorage.list = [];
+      list = [];
+    }
+
     service.getList = getList;
     service.setListStorage = setListStorage;
+    service.cleanStorage = cleanStorage;
 
   }
 }());

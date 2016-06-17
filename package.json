@@ -32,7 +32,8 @@
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.22",
     "karma-firefox-launcher": "^1.0.0",
-    "karma-jasmine": "^1.0.2"
+    "karma-jasmine": "^1.0.2",
+    "karma-ng-html2js-preprocessor": "^1.0.0"
   },
   "dependencies": {
     "concurrently": "^2.1.0"

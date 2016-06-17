@@ -5,7 +5,6 @@
   function IndexController($scope, IndexService) {
     function init() {
       setVariables();
-      setMethods();
 
       getElements();
       watchList();
@@ -15,9 +14,6 @@
       $scope.title = 'TODO-List';
       $scope.isList = true;
       $scope.todoListElements = [];
-    }
-
-    function setMethods(){
     }
 
     function getElements(){
